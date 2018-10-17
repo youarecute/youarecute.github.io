@@ -1,0 +1,133 @@
+# 一、创建github账号,并创建blog
+
+1.登录github，创建资源库
+2.资源库名字：用户名.github.io（登陆博客，就是http://用户名.github.io）
+3.添加注释
+4.public
+5.创建博客
+6.在成功界面点击setting，可设置css样式（github pages页面 可设置博客界面样式），记住保存
+7.修改博客内容,通过右上角的笔的图案 可以设置，记住保存
+
+
+
+# 二、git与github的差别
+
+git 分布式（服务器有所有版本，客户端也有所有版本）
+github ---svn集中式（服务器有所有版本，客户端只有某一个）
+
+集中式：
+用户1
+用户2
+同时将数据传入 代码管理服务器，在这里面进行处理，处理结果project1.1，project1.2返回
+
+分布式
+用户1   git本地仓库
+                       同步到         服务器--》修改后的
+用户2   git本地仓库
+
+
+# 三、通过git控制github
+
+
+$ pwd           显示当前目录（一般都是用户那个文件夹）
+
+$ cd /
+
+$ ls
+
+$ cd ~  回到用户主目录
+
+$ cd Desktop/    跳转桌面
+
+$ mkdir 新建文件夹名
+
+ls  查看文件夹下文件
+mkdir 创建文件夹
+touch 创建文件
+git status 查看文件夹状态
+git add  添加文件到本地git
+
+
+
+（将github复制成文件）
+第一步：
+$ git clone
+打开自己的github的源库，点击右边clone and download ，切换ssh，复制路径
+在指令git clone 后面添加路径
+确定后再输入yes确定
+
+第二步：配置公钥（配置好了就不用再配置了）
+$ ssh-keygen -t rsa -C “570047191@qq.com”
+三次回车
+在我的电脑打开用户，。。。打开.ssh文件夹，以记事本形式打开id_rsa.pub
+
+打开自己的github的用户设置，点击ssh and GPG keys ，添加公钥。随机名 和 记事本内容
+
+再次执行git clone命令
+
+git commit -m “要提交的内容是什么  提交日志”   （将我们做的操作提交到本地git仓库）
+git push -u origin master （第一遍这么写，目的是设置以后默认都是往master分支上提交代码）
+（git pull 保证本地代码同步 服务器中的了才能push）
+git push
+
+
+
+
+
+
+
+
+git命令
+git clone 仓库地址
+touch 创建文件
+git add  文件路径（让创建出来的文件告诉git仓库要添加）
+git commit -m “要提交的内容是什么  提交日志”   （将我们做的操作提交到本地git仓库）
+git push -u origin master （第一遍这么写，目的是设置以后默认都是往master分支上提交代码）
+（git pull 保证本地代码同步到 服务器中的了才能push）
+git push
+(git push提交成功，但是网页查找时显示错误404的时候，原因是文档里面出现了中文字符【支持中文，但是不支持中文字符】)
+
+aaa.md
+栈   先进后出
+<<<<<<（显示在文档中）
+Li.md  11 echo hhh github 1.1
+====
+       11 echo aaa local 1.2
+>>>>>
+oo.md
+git stash
+存在栈中1.2
+local 1.1
+
+git pull
+git stash pop 出栈
+local hhh aaa 代码冲突
+
+
+
+
+
+创建文件并写入
+echo "xxx" >> 文件名
+git add ../   回到上一级目录
+[网址网站名] (网址名)
+![图片名] (图片链接网址)
+
+
+创建git 多人合作
+
+1.github 创建一个用于多人合作的git仓库
+2.推送1.0版本代码,内容到我们的仓库中
+3.默认情况哪个账号创建的仓库,只有本人能够提交东西,如果想要多人提交,需要邀请别人成为协作者
+4.创建文件夹,将文件夹初始化
+5.写文件
+6.先添加提交
+7.添加链接
+8.刷新
+
+
+
+git init       初始化git仓库( .git文件夹的生成 )
+git remote add origin git@github.com:namewangjun/wangjun.git
+刚开始初始化出来的git仓库是不知道要推送的远端git仓库是谁的
+所以需要我们通过该命令告诉他要和那个仓库连接
