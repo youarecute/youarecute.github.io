@@ -3,8 +3,20 @@
 - git
 	- [github blog build](https://youarecute.github.io/git/blog)
 	- [GitHub](http://github.com)
-	- [git笔记](https://youarecute.github.io/git)
+	- [git1](https://youarecute.github.io/git/git1)
+	- [git2](https://youarecute.github.io/git/git2)
+	- [git3](https://youarecute.github.io/git/git3)
+	- [git命令](https://youarecute.github.io/git/git命令)
+	
 - linux
-
+	- [unix](https://youarecute.github.io/git/unix)
+	- [Linux](https://youarecute.github.io/git/Linux)
+	- [Linux1](https://youarecute.github.io/git/Linux1)
+	- [awk和sed命令](https://youarecute.github.io/git/awk和sed命令)
 - hadoop
+	- [Hadoop安装和单节点测试](https://youarecute.github.io/git/Hadoop安装和单节点测试)
+	- [安装伪分布式](https://youarecute.github.io/git/安装伪分布式)
+	- [Hadoop伪分布式](https://youarecute.github.io/git/Hadoop伪分布式)
+	
+	
 
