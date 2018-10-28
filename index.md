@@ -3,9 +3,9 @@
 - git
 	- [github blog build](https://youarecute.github.io/git/blog)
 	- [GitHub](http://github.com)
-	- [git1](https://youarecute.github.io/git/git1)
+	- [git1](http://youarecute.github.io/git/git1)
 	- [git2](https://youarecute.github.io/git/git2)
-	- [git3](https://youarecute.github.io/git/git3)
+	- [git3](http://youarecute.github.io/git/git3)
 	- [git命令](https://youarecute.github.io/git/git命令)
 	
 - linux
