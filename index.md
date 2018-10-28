@@ -3,7 +3,7 @@
 - git
 	- [github blog build](https://youarecute.github.io/git/blog)
 	- [GitHub](http://github.com)
-	- git命令
+	- [git笔记](https://youarecute.github.io/git)
 - linux
 
 - hadoop
