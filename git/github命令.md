@@ -82,7 +82,7 @@ git 多人合作
 
 git init 初始化git仓库(.git文件夹生成)
 
-git remote add origin git@github.com:kll082511/project.git     确认本地和远程仓库连接
+git remote add origin git@github.com:youarecute.github.io    确认本地和远程仓库连接
 
 刚开始初始化出来的git仓库是不知道推送的远端git仓库是谁,
 
