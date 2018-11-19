@@ -22,5 +22,5 @@ scp -r /home/tars/hadoop-2.7.3/etc/hadoop hadoop@172.18.24.190:/home/tars/hadoop
 - ④查看正常加入的datanode的命令:hdfs dfsadmin -report
 #### 3.在网页上登录namenode,发现datanode没有正常加入到namenode上的解决方法
 - 找到datanode虚拟机的hadoop的解压包下的logs文件夹下的namenode的log文件打开,会发现hostname的错误.这时,在namenode的/etc/hosts文件中添加三个datanode和namenode虚拟机的ip和对应给他取个名字即可.
-	- 例如: 172.18.24.190  datanode1
+	- 例如: 172.18.24.190  datanode1ll
 	- 172.18.24.28 namenode
